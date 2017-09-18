@@ -1,5 +1,5 @@
 var username = "konpan1006@gmail.com"
-var password = "orangepark9398!"
+var password = ""
 
 var casper = require('casper').create({
 	verbose: true,
@@ -27,7 +27,7 @@ casper.wait(2000, function(){
 //fills out form with user info and clicks log in
 casper.then(function(){
 	this.sendKeys('input[name=username]', 'konpan1006@gmail.com');
-	this.sendKeys('input[name=password]', 'orangepark9398!');
+	this.sendKeys('input[name=password]', '');
 
 	casper.click(x('//*[@id="react-root"]/section/main/article/div[2]/div[1]/div/form/span/button'));
 
